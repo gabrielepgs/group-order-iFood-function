@@ -1,0 +1,112 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-searchbar class="searchbar" color="light" value="Pizzaria"></ion-searchbar>
+  <ion-toolbar>
+    <ion-segment value="lojas" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="lojas" class="tabStyle" >
+        Lojas (3)
+      </ion-segment-button>
+      <ion-segment-button value="itens" class="tabStyle">
+        Itens
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div class="container">
+    <div class="scroll" scrollY="true">
+      <ion-chip class = "toggle-chip">
+        <ion-label>Filtros</ion-label>
+        <ion-icon name="menu-outline"></ion-icon> 
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Ordenar</ion-label>
+        <ion-icon name="chevron-down-outline"></ion-icon>        
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Pra Retirar</ion-label>
+        <ion-icon name="walk"></ion-icon>
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Entrega Grátis</ion-label>     
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Vale Refeição</ion-label>
+        <ion-icon name="chevron-down-outline"></ion-icon>     
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Distância</ion-label>
+        <ion-icon name="chevron-down-outline"></ion-icon>       
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Entrega Parceira</ion-label>  
+      </ion-chip>
+
+      <ion-chip class = "toggle-chip">
+        <ion-label>Super Restaurante</ion-label>      
+      </ion-chip>      
+    </div>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngIf="selectedSegment == 'lojas'">
+
+    <ion-item button >
+      <ion-avatar slot="start">
+        <img src="assets/images/rodriguesPizzaria.jpg">
+      </ion-avatar>
+      <ion-label>
+        <ion-text class="h2Style">
+          <h2>Rodriguês Pizzaria Vegana</h2>
+        </ion-text>
+        <p>
+          <ion-icon name="star" color="warning" class="paddingIcon"></ion-icon>
+          <ion-text color="warning"> 4,9</ion-text> · Pizzaria · 0,9 km
+        </p>
+        <p>Aberto · R$ 6,00</p>
+      </ion-label>
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item button >
+      <ion-avatar slot="start">
+        <img src="assets/images/pizzaCreck.jpg">
+      </ion-avatar>
+      <ion-label>
+        <ion-text class="h2Style">
+          <h2>Pizzaria Creck</h2>
+        </ion-text>
+        <p>
+          <ion-icon name="star" color="warning" class="paddingIcon"></ion-icon>
+          <ion-text color="warning"> 4,8</ion-text> · Pizzaria · 1,4 km
+        </p>
+        <p>Aberto · Grátis</p>
+      </ion-label>
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-item>
+
+    <ion-item button >
+      <ion-avatar slot="start">
+        <img src="assets/images/casaNova.jpg">
+      </ion-avatar>
+      <ion-label>
+        <ion-text class="h2Style">
+          <h2>Pizzaria Casa Nova</h2>
+        </ion-text>
+        <p>
+          <ion-icon name="star" color="warning" class="paddingIcon"></ion-icon>
+          <ion-text color="warning"> 4,5</ion-text> · Pizzaria · 3,0 km
+        </p>
+        <p>Aberto · R$ 8,00</p>
+      </ion-label>
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

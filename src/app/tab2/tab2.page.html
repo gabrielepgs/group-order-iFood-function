@@ -1,0 +1,59 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="nav-header__title">
+      MEUS PEDIDOS
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon style='padding-top:10px' color="primary" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p class="h1Style">Histórico</p> 
+  <p class="textBody">Qua. 18 agosto 2021</p> 
+  <ion-card>
+    <ion-item routerLink='detalhes-pedido'>
+      <div style='width:100% !important;'>
+        <div style='width:100px !important; float:left; height: 90px !important;'>
+          <div style='position:relative; top:0px; left:0px;'>
+            <ion-avatar slot="start">
+              <img src="assets/images/rodriguesPizzaria.jpg">
+            </ion-avatar>
+          </div>
+          <div style='position:absolute; top:15px; left:15px; '>
+            <ion-avatar slot="start">
+              <img src="assets/images/casaNova.jpg">
+            </ion-avatar>
+          </div>
+        </div>
+        <div style='width:150px !important; display: inline-block; margin:0 auto; height: 90px !important;'>
+          <ion-label class="h2Style" style='padding-top: 20px;'>Rodrigês Pizzaria</ion-label>
+          <ion-label class="h2Style" style='padding-bottom: 10px;'>Casa Nova Pizzaria</ion-label>
+        </div>
+        <div style='float:right; width:20px; height: 90px !important;'>
+          <ion-icon style='padding-top: 30px;' name="chevron-forward-outline"></ion-icon>
+        </div>
+      </div>
+    </ion-item>
+    <ion-card-content>
+       <p><ion-icon style='margin: 2px 2px 0px 0px;' name="checkmark-circle" color="success"></ion-icon>Pedido Concluído · Nº 7999</p>
+       <p>1 Pizza de Muzzarela</p> 
+       <p style='font-weight: 700 !important;'>mais 3 itens</p>
+    </ion-card-content>
+
+    <ion-grid style='padding: 0px;'>
+      <ion-row>
+        <ion-col class="ion-align-self-start" style='text-align: center;'>
+          <p class='textStyle' style='font-size: 0.90rem; font-weight: 650; color: #ea1d2c'>Ajuda</p>
+        </ion-col>
+        <ion-col class="ion-align-self-end" style='text-align: center;'>
+          <p class='textStyle' style='font-size: 0.90rem; font-weight: 650; color: #ea1d2c'>Adicionar à sacola</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

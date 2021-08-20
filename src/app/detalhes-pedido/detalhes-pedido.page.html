@@ -1,0 +1,136 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="nav-header__title">
+      DETALHES DO PEDIDO
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button >
+        <ion-icon style='padding-top:10px' color="primary" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style='width:100% !important; margin-top: 10px !important; margin-left: 10px !important;'>
+    <div style='width:100px !important; float:left; height: 70px !important;'>
+      <div style='position:relative; top:0px; left:0px;'>
+        <ion-avatar slot="start">
+          <img src="assets/images/rodriguesPizzaria.jpg">
+        </ion-avatar>
+      </div>
+      <div style='position:absolute; top:25px; left:30px; '>
+        <ion-avatar slot="start">
+          <img src="assets/images/casaNova.jpg">
+        </ion-avatar>
+      </div>
+    </div>
+    <div style='width:150px !important; display: inline-block; margin-top: 15px; height: 70px !important;'>
+      <ion-label class="h2Style" style='padding-top: 20px;'>Rodrigês Pizzaria</ion-label>
+      <ion-label class="h2Style" style='padding-top: 20px;'>Casa Nova Pizzaria</ion-label>
+    </div>
+  </div>
+  <p style='margin-left: 10px !important; font-size: 0.60rem;' class='textStyle'>
+    <ion-text>Realizado às 18:43 - 18/08/2021</ion-text>
+  </p>
+
+  <div class="flex-box container-box">
+    <ion-icon style='margin: 0px 0px 0px 0px;' name="checkmark-circle" color="success"></ion-icon>
+    <ion-text class='textStyle'>Pedido concluído às 19:43</ion-text>
+  </div>
+
+  <p style='margin: 10px 0px 0px 10px !important; font-size: 0.80rem; font-weight: 600;' class='textStyle'>Pedido nº
+    7999</p>
+
+  <ion-card>
+    <div style='width:100% !important; height: 60px !important;'>
+      <ion-card-header>
+        <div style='float:left; '>
+          <p style='font-weight: 600;'>Restaurante 1 - Rodriguês Pizzaria</p>
+        </div>
+        <div style='float:right;'>
+          <p style='font-weight: 600;'>R$ 60,00</p>
+        </div>
+      </ion-card-header>
+    </div>
+    <div style='width:100% !important; height: 80px !important; '>
+      <ion-card-content>
+        <p>1 Pizza de Muzzarela Vegana</p>
+        <p>1 Pizza de Legumes</p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <div style='width:100% !important; height: 60px !important;'>
+      <ion-card-header>
+        <div style='float:left; '>
+          <p style='font-weight: 600;'>Restaurante 2 - Casa Nova Pizzaria</p>
+        </div>
+        <div style='float:right;'>
+          <p style='font-weight: 600;'>R$ 50,00</p>
+        </div>
+      </ion-card-header>
+    </div>
+    <div style='width:100% !important; height: 80px !important; '>
+      <ion-card-content>
+        <p>1 Pizza Frango com Catupiry</p>
+        <p>1 Coca-Cola</p>
+      </ion-card-content>
+    </div>
+  </ion-card>
+
+  <ion-grid style='padding: 0px;'>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <p class='textStyle' style='font-size: 0.90rem; font-weight: 400;'>Subtotal</p>
+      </ion-col>
+      <ion-col class="ion-align-self-end" style='text-align: end;'>
+        <p class='textStyle rightText'>R$ 110,00</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid style='padding: 0px;'>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <p class='textStyle' style='font-size: 0.90rem; font-weight: 400;'>Taxa de entrega</p>
+      </ion-col>
+      <ion-col class="ion-align-self-end" style='text-align: end;'>
+        <p class='textStyle rightText'>R$ 16,00</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid style='padding: 0px;'>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <p class='textStyle' style='font-size: 1.1rem; font-weight: 600;'>Total</p>
+      </ion-col>
+      <ion-col class="ion-align-self-end" style='text-align: end;'>
+        <p class='textStyle rightText' style='font-weight: 600; font-size: 1.1rem;'>R$ 126,00</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid style='padding: 0px; border-top: 0.05rem solid #b9baba; border-bottom: 0.05rem solid #b9baba;'>
+    <ion-row>
+      <ion-col class="ion-align-self-start">
+        <p class='textStyle' style='font-size: 0.90rem; font-weight: 400;'>Pago pelo app</p>
+      </ion-col>
+      <ion-col class="ion-align-self-end" style='text-align: end;'>
+        <div style='display: inline-flex;'>
+          <ion-icon style='margin: 5px 5px 0px 0px;' name="card" color="warning"></ion-icon>
+          <p class='textStyle rightText'>····1234</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div style='margin: 10px 10px 10px 5px !important;'>
+    <p class='textStyle' style='font-size: 0.80rem; font-weight: 600;'>Enderelo de entrega</p>
+    <p class='textStyle'>Rua Duque de Caxias, 415 - Apto 84</p>
+    <p class='textStyle'>Centro - Barueri - SP</p>
+  </div>
+
+</ion-content>
